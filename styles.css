@@ -1,0 +1,149 @@
+/* styles.css */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: green;
+  background-image: url('images/dollars-499481_1920.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  opacity: 0.4;
+  filter: blur(3px);
+  /* Apply a blur effect */
+}
+
+.Title {
+  font-size: 3rem;
+  text-align: center;
+  color: black;
+}
+
+#title {
+  padding-top: 50px;
+
+}
+
+.container {
+  padding-top: 20px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.form-control {
+  margin: auto;
+  /* Center the input fields horizontally */
+  margin-bottom: 20px;
+  /* Increase space between input fields */
+  display: block;
+  /* Ensure input fields take full width of column */
+}
+
+#Rate,
+#Hours,
+#Tax {
+  font-size: 1.5rem;
+  /* Adjust input field font size */
+  font-style: bold;
+  color: green;
+  text-align: center;
+  width: 250px;
+  height: 100px;
+}
+
+::placeholder {
+  font-style: italic;
+  font-weight: bold;
+}
+
+#Total {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bold;
+  color: green;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  display: none;
+}
+
+.scaling-text {
+  margin-bottom: 200px;
+  animation-name: scaleAnimation;
+  animation-duration: 1s;
+  /* Duration of the animation */
+  animation-iteration-count: 1;
+  /* Repeat indefinitely */
+  animation-direction: alternate;
+  /* Animates back and forth */
+  animation-timing-function: ease-in-out;
+  /* Smooth acceleration and deceleration */
+  animation-fill-mode: forwards;
+  /* Keeps the final animation state */
+}
+
+@keyframes scaleAnimation {
+
+  /* Initial font size */
+  0% {
+    transform: scale(2);
+  }
+
+  /* Maximum font size */
+  100% {
+    transform: scale(2.5);
+  }
+}
+
+.scaling-textFooter {
+  animation-name: scaleAnimationFooter;
+  animation-duration: 2s;
+  /* Duration of the animation */
+  animation-iteration-count: infinite;
+  /* Repeat indefinitely */
+  animation-direction: alternate;
+  /* Animates back and forth */
+  animation-timing-function: ease-in-out;
+  /* Smooth acceleration and deceleration */
+}
+
+@keyframes scaleAnimationFooter {
+
+  /* Initial font size */
+  0% {
+    transform: scale(1);
+  }
+
+  /* Maximum font size */
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+footer {
+  position: absolute;
+  left: 40%;
+  bottom: 10px;
+  text-align: center;
+  padding: 3px;
+  color: white;
+}
+
+#tag { 
+  border-radius: 10px;
+  padding: 5px 10px 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
